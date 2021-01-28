@@ -13,7 +13,16 @@ module.exports = {
         exclude: /node_modules/,
         loader: "babel-loader",
       },
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"],
+      },
     ],
   },
   devtool: "cheap-module-source-map",
+  devServer: {
+    contentBase: path.join(__dirname, "public"),
+    port: 9000,
+    clientLogLevel: "error",
+  },
 };
