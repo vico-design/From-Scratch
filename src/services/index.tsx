@@ -2,11 +2,13 @@ import axios from "axios";
 
 interface ICharacterParams {
   name: string;
+  status: string;
+  gender: string;
 }
 
 export const getCharacters = async (params?: ICharacterParams) => {
   const res = await axios.get("https://rickandmortyapi.com/api/character", {
-    params: params,
+    params,
   });
   return res.data;
 };
