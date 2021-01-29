@@ -1,10 +1,12 @@
 .main-component {
   margin: 0px;
+  background-color: #021422;
 }
 
 .title {
   display: grid;
   place-items: center;
+  color: white;
 }
 
 .input-container {
