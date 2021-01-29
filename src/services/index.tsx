@@ -4,7 +4,7 @@ interface ICharacterParams {
   name: string;
 }
 
-export const getCharacter = async (params: ICharacterParams) => {
+export const getCharacters = async (params?: ICharacterParams) => {
   const res = await axios.get("https://rickandmortyapi.com/api/character", {
     params: params,
   });
