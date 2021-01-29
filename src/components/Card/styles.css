@@ -1,0 +1,31 @@
+.card-container {
+  width: 150px;
+
+  margin: 10px;
+  background-color: #87a3b0;
+}
+
+.card-image {
+  width: 150px;
+  height: 130px;
+}
+.card-container > h1 {
+  font-size: 16px;
+  text-align: center;
+}
+
+.card-container > h2 {
+  font-size: 12px;
+}
+
+.character-id-container {
+  background-color: #87a3b0;
+  width: 25px;
+  height: 25px;
+  border-radius: 15px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./styles.css";
 import { getCharacters } from "../../services";
-import CharacterCard from "../../components/characterCard";
+import Card from "../../components/Card";
 
 const Search = () => {
   const [characters, setCharacters] = useState([]);
@@ -16,7 +16,7 @@ const Search = () => {
   }, []);
 
   return (
-    <div className="main-component">
+    <div className="search-container">
       <h1 className="title">Rick and Morty</h1>
       <form className="input-container">
         <input className="input" />
@@ -24,9 +24,9 @@ const Search = () => {
           Search
         </button>
       </form>
-      <div className="images-container">
+      <div className="cards-container">
         {characters.map(character => (
-          <CharacterCard character={character} />
+          <Card character={character} />
         ))}
       </div>
     </div>

@@ -1,6 +1,7 @@
-.main-component {
+.search-container {
   margin: 0px;
   background-color: #021422;
+  height: 100%;
 }
 
 .title {
@@ -20,4 +21,10 @@
 }
 .button {
   display: none;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
