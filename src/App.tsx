@@ -4,14 +4,17 @@ import Header from "./components/header";
 import Footer from "./components/footer";
 import Search from "./pages/search";
 import Detail from "./pages/detail";
+import "./styles.css";
 
 const App = () => {
   return (
-    <div>
+    <div className="app-container">
       <Header />
       <Switch>
-        <Route exact path="/" component={Search} />
-        <Route exact path="/detail" component={Detail} />
+        <div className="route-container">
+          <Route exact path="/" component={Search} />
+          <Route exact path="/detail" component={Detail} />
+        </div>
       </Switch>
       <Footer />
     </div>
