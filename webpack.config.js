@@ -1,7 +1,7 @@
 const path = require("path");
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: "./src/index.ts",
   output: {
     path: path.join(__dirname, "public"),
     filename: "bundle.js",
@@ -9,15 +9,18 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.tsx$/,
         exclude: /node_modules/,
-        loader: "babel-loader",
+        use: "ts-loader",
       },
       {
         test: /\.css$/,
         use: ["style-loader", "css-loader"],
       },
     ],
+  },
+  resolve: {
+    extensions: [".tsx", ".ts", ".js"],
   },
   devtool: "cheap-module-source-map",
   devServer: {
