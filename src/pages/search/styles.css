@@ -1,0 +1,21 @@
+.main-component {
+  margin: 0px;
+}
+
+.title {
+  display: grid;
+  place-items: center;
+}
+
+.input-container {
+  display: grid;
+  place-items: center;
+}
+.input {
+  border: none;
+  outline-width: 0;
+  background-color: grey;
+}
+.button {
+  display: none;
+}
