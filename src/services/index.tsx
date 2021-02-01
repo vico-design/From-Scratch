@@ -4,6 +4,7 @@ interface ICharacterParams {
   name: string;
   status: string;
   gender: string;
+  page: number;
 }
 
 export const getCharacters = async (params?: ICharacterParams) => {

@@ -1,0 +1,31 @@
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+.pagination-container > button {
+  background-color: #87a3b0;
+  color: white;
+  border: none;
+  margin: 5px;
+  outline: none;
+}
+
+.current-page {
+  background-color: white !important;
+  color: #87a3b0 !important;
+  font-weight: 800;
+}
+
+.rest-pages {
+  color: white;
+  margin: 5px;
+  font-size: 14px;
+  align-self: center;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+  color: gray;
+}
