@@ -2,12 +2,12 @@
   display: flex;
   justify-content: space-evenly;
   background-color: #87a3b0;
-  height: 50px;
+  padding: 15px;
   align-items: center;
 }
 
 .footer-component > a {
   color: black;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 17px;
 }

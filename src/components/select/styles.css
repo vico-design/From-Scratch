@@ -1,0 +1,33 @@
+.select-container {
+  display: flex;
+  flex-direction: column;
+  width: 75px;
+}
+
+.filter-name-open {
+  color: white;
+  border: 1px solid white;
+  border-radius: 9px 9px 0 0;
+  text-align: center;
+  padding: 5px;
+}
+
+.filter-name {
+  border-radius: 9px;
+  color: white;
+  border: 1px solid white;
+  text-align: center;
+  padding: 2px;
+}
+
+.options-container {
+  text-align: center;
+  color: white;
+  list-style: none;
+  border: 1px solid white;
+  border-radius: 0 0 9px 9px;
+  padding: 3px;
+  border-top: none !important;
+}
+.options-container li {
+}

@@ -11,13 +11,17 @@
 }
 
 .input-container {
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: space-around;
+  margin: 24px;
 }
 .input {
+  border-radius: 10px;
   border: none;
   outline-width: 0;
-  background-color: grey;
+  background-color: white;
+  height: 23px;
+  width: 153px;
 }
 .button {
   display: none;

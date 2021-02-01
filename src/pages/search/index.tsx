@@ -32,6 +32,7 @@ const Search = () => {
           onChange={e => setInput(e.currentTarget.value)}
           type="text"
           value={input}
+          placeholder="Type a character..."
         />
         <Select
           title="Gender"
