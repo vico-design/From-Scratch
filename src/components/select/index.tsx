@@ -17,7 +17,9 @@ const Select = ({ title, options, setter }: ISelectProps) => {
 
   return (
     <div className="select-container">
-      <div className="filter-name" onClick={() => setIsOpen(!isOpen)}>
+      <div
+        className={`${isOpen ? "filter-name-open" : "filter-name"}`}
+        onClick={() => setIsOpen(!isOpen)}>
         {title}
       </div>
       {isOpen && (
