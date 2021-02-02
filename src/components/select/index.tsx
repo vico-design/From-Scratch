@@ -15,8 +15,19 @@ const Select = ({ title, options, setter }: ISelectProps) => {
     setIsOpen(false);
   };
 
+  const onClickOutsideListener = () => {
+    {
+      isOpen && setIsOpen(!isOpen);
+    }
+    document.removeEventListener("click", onClickOutsideListener);
+  };
+
   return (
-    <div className="select-container">
+    <div
+      className="select-container"
+      onMouseLeave={() => {
+        document.addEventListener("click", onClickOutsideListener);
+      }}>
       <div
         className={`${isOpen ? "filter-name-open" : "filter-name"}`}
         onClick={() => setIsOpen(!isOpen)}>

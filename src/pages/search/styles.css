@@ -12,7 +12,6 @@
 
 .input-container {
   display: flex;
-  justify-content: space-around;
   margin: 24px;
 }
 .input {
