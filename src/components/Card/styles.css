@@ -1,7 +1,7 @@
 .card-container {
   width: 150px;
   margin-bottom: 15px;
-
+  border-radius: 5px;
   margin: 10px;
   background-color: #87a3b0;
 }
@@ -9,16 +9,20 @@
 .card-image {
   width: 150px;
   height: 130px;
+  border-radius: 5px 5px 0 0;
 }
 .card-container > h1 {
   font-size: 16px;
   text-align: center;
+  font-family: sans-serif;
 }
 
 .card-container > h2 {
   font-size: 12px;
 }
-
+.character-id {
+  font-family: sans-serif;
+}
 .character-id-container {
   background-color: #87a3b0;
   width: 25px;
@@ -29,4 +33,26 @@
   justify-content: center;
   align-items: center;
   border: 1px solid black;
+}
+
+@media only screen and (min-width: 768px) {
+  .card-container {
+    height: 300px;
+    width: 300px;
+  }
+  .character-id-container {
+    width: 36px;
+    height: 36px;
+    border-radius: 19px;
+  }
+  .character-id {
+    font-size: 22px;
+  }
+  .card-image {
+    width: 300px;
+    height: 250px;
+  }
+  .card-container > h1 {
+    font-size: 20px;
+  }
 }
